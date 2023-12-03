@@ -1,0 +1,18 @@
+name: Auctions
+version: '${project.version}'
+main: com.nextdevv.auctions.Auctions
+libraries:
+    - io.lettuce:lettuce-core:6.2.5.RELEASE
+commands:
+    auctions:
+        description: Auctions command
+        usage: /<command> [args]
+        aliases: [auc, ah, auction]
+        permission: auctions.command
+permissions:
+    auctions.command:
+        description: Auctions command
+        default: not op
+    auctions.admin:
+        description: Auctions admin command
+        default: op

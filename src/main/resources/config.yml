@@ -1,0 +1,5 @@
+redis-url: "redis://localhost:6379"
+auctions:
+  max-queue-size: 3
+  time-between: 5 # seconds
+  minimum-cancel-time: 20 # seconds
